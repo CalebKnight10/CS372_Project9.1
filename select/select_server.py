@@ -19,7 +19,8 @@ def run_server(port):
 
     # loop forever
     while True:
-        # call select() and get the sockets that are ready to read
+
+        # call select(), get sockets that are ready-to-read
         ready_to_read, _, _ = select.select(listener, [], [])
 
         # for each socket that is ready-to-read
